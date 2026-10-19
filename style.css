@@ -36,3 +36,30 @@ footer a { color: var(--muted); }
   .product { grid-template-columns: 1fr; padding: 20px; }
   nav a { margin-left: 12px; }
 }
+/* Guides */
+.guide .kicker { color: var(--accent); font-size: 14px; font-weight: 600; margin: 0 0 6px; }
+.guide .lede { color: var(--muted); font-size: 18px; margin: 10px 0 8px; }
+.guide h3 { font-size: 17px; margin: 22px 0 4px; }
+.guide ol, .guide ul { padding-left: 22px; }
+.guide li { margin: 5px 0; }
+.cta { display: flex; gap: 16px; align-items: flex-start; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 20px; margin: 28px 0; }
+.cta > img { width: 48px; height: 48px; border-radius: 10px; flex: none; }
+.cta p { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+.cta .cta-links { color: var(--ink); }
+a.button { display: inline-block; background: var(--accent); color: var(--panel); text-decoration: none; font-weight: 600; border-radius: 8px; padding: 6px 14px; margin-right: 10px; }
+.guides { padding: 0 0 56px; }
+.guides h2 { font-size: 26px; margin: 0 0 12px; }
+.guide-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.guide-list a { display: block; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px; text-decoration: none; color: var(--ink); }
+.guide-list a:hover { border-color: var(--accent); }
+.guide-list strong { display: block; margin-bottom: 4px; }
+.guide-list span { color: var(--muted); font-size: 15px; }
+@media (max-width: 680px) { .guide-list { grid-template-columns: 1fr; } .cta { flex-direction: column; } }
+article.doc { padding: 48px 0 64px; max-width: 700px; }
+article.doc h1 { font-size: clamp(28px, 5vw, 34px); line-height: 1.2; letter-spacing: -.02em; margin: 0 0 6px; }
+article.doc h2 { font-size: 21px; margin: 34px 0 6px; }
+@media (max-width: 680px) {
+  header.site .wrap { height: auto; padding-top: 14px; padding-bottom: 12px; flex-direction: column; align-items: flex-start; gap: 6px; }
+  nav { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+  nav a { margin-left: 0; }
+}
